@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.App {
+    height: 100vh;
+    background-color: rgba(22, 21, 21, 0.932);
+}
+
+
+/* NAVIGATION BAR STYLING STARTS  */
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    height: 5rem;
+    background-color: rgba(117, 12, 12, 0.384);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    border-radius: 15px 50px;
+}
+
+
+
+
+
+/* NAVIGATION STYLING ENDS HERE */
+
+
+/* DASHBOARD STYLING STARTS */
+
+.dashboard {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard--container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.about--me,
+.about--picture {
+    width: 50%;
+    /* padding: 20px */
+}
+
+.about--me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10rem;
+    line-height: 2rem;
+    color: white;
+    font-size: 150%;
+    font-weight: 100;
+}
+
+
+
+.about--me .name b {
+    font: 400 150% "Quattrocento Sans";
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444bd, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444c4, 0 10px 3px #000;
+    line-height: 5rem;
+}
+
+.about--me .name b span {
+    animation: blink linear infinite 2s;
+}
+
+.about--me .name b span:nth-of-type(2) {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #302f2f;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #383838;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #313131;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+.about--picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--picture img {
+    width: 50%;
+    object-fit: fill;
+}
+
+/* Connect With Me Styling Starts */
+
+.connect--with--me{
+    margin-top: 4rem;
+}
+
+.wrapper {
+    display: flex;
+  }
+  
+  .wrapper a {
+    color: #000000;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #eeeeeea4;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(133, 21, 21, 0.76);
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #3d2929bd, 0 0 0.5em #b69797, 0 0 0.1em #0f0909c4, 0 10px 3px #000;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: iconBlink infinite linear 3s;
+
+  }
+
+  @keyframes iconBlink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #302f2f;
+    }
+
+    80% {
+
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #383838;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #313131;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(11, 10, 54, 0.1);
+  }
+  
+  .wrapper .discord:hover,
+  .wrapper .discord:hover .tooltip,
+  .wrapper .discord:hover .tooltip::before {
+    background: #7289da;
+    color: #ffffff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1D9BF0;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #ffffff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #CD201F;
+    color: #ffffff;
+  }
+
+
+
+
+/* Connnect with me Styling ends here */
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+    .dashboard--container {
+        flex-direction: column;
+    }
+
+    .about--me,
+    .about--picture {
+        width: 100%;
+    }
+
+    .about--me{
+        padding-left: 0;
+        padding: 30px;
+        font-size: 50%;
+    }
+
+    .about--me .name b {
+        font: 400 80% "Quattrocento Sans";
+    }
+
+    .about--picture img {
+        margin: unset;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+
+    .about--me{
+        padding-left: 0;
+        padding: 30px;
+        font-size: 80%;
+    }
+
+    .about--me .name b {
+        font: 400 100% "Quattrocento Sans";
+    }
+
+    .about--picture img {
+        margin: unset;
+    }
+}
+
+/* DASHBOARD STYLING ENDS  */
+
+
+/* SKILLS STYLING STARTS */
+
+.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
