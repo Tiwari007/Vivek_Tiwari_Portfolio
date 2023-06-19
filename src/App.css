@@ -14,7 +14,8 @@ html {
 
 .App {
     height: 100vh;
-    background-color: rgba(22, 21, 21, 0.932);
+    /* background-color: #212428; */
+    background-color: #0E0E17;
 }
 
 
@@ -24,7 +25,7 @@ html {
     width: 80%;
     margin: auto;
     height: 5rem;
-    background-color: rgba(117, 12, 12, 0.384);
+    background-color: #212428;
     color: white;
     display: flex;
     align-items: center;
@@ -69,7 +70,7 @@ html {
     padding-left: 10rem;
     line-height: 2rem;
     color: white;
-    font-size: 150%;
+    font-size: 1.8rem;
     font-weight: 100;
 }
 
@@ -78,7 +79,7 @@ html {
 .about--me .name b {
     font: 400 150% "Quattrocento Sans";
     color: #fee;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444bd, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444c4, 0 10px 3px #000;
+    text-shadow: -6px -3px 14px, 0 0 2px, 0 0 6em #ff4444bd, 2px 3px 0.5em #ff4444, 0 0 0.1em #ff4444c4, -1px 4px 3px #000;
     line-height: 5rem;
 }
 
@@ -300,40 +301,15 @@ html {
 
 
 
-/* Media Queries */
+/* Media Queries 1200, 800, 500, 300 */
 
-@media screen and (max-width: 500px) {
-    .dashboard--container {
-        flex-direction: column;
-    }
-
-    .about--me,
-    .about--picture {
-        width: 100%;
-    }
-
-    .about--me{
-        padding-left: 0;
-        padding: 30px;
-        font-size: 50%;
-    }
-
-    .about--me .name b {
-        font: 400 80% "Quattrocento Sans";
-    }
-
-    .about--picture img {
-        margin: unset;
-    }
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
 
 
     .about--me{
         padding-left: 0;
         padding: 30px;
-        font-size: 80%;
+        font-size: 1.5rem;
     }
 
     .about--me .name b {
@@ -344,6 +320,59 @@ html {
         margin: unset;
     }
 }
+
+@media screen and (max-width: 800px) {
+
+
+    .about--me{
+        padding-left: 0;
+        padding: 30px;
+        font-size: 1.3rem;
+    }
+
+    .about--me .name b {
+        font: 400 100% "Quattrocento Sans";
+    }
+
+    .about--picture img {
+        margin: unset;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .dashboard--container {
+        flex-direction: column;
+    }
+
+    .about--me,
+    .about--picture {
+        width: 100%;
+    }
+
+    .about--me{
+        font-size: 1.2;
+        padding-left: 0;
+        /* padding: 30px; */
+    }
+
+    .about--me .name b {
+        font: 400 80% "Quattrocento Sans";
+    }
+
+    .about--picture img {
+        margin: unset;
+    }
+
+    .connect--with--me{
+        margin-top: 2rem;
+    }
+
+    .navbar {
+        height: 3rem;
+    }
+}
+
+
 
 /* DASHBOARD STYLING ENDS  */
 
