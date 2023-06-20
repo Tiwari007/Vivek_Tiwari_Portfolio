@@ -3,14 +3,16 @@ import projectData from '../data/projectData.json'
 
 const Projects = () => {
 
+    console.log(projectData);
+
     return (
-        <div className="project--container">
+        <div className="project--container" id='projects'>
             <h1 className="project--title">Projects</h1>
             <div className="projects">
                 {
                     projectData?.map((project, index) => {
                         return (
-                            <ProjectCard key={index} projectData={project} />
+                            <ProjectCard key={index} project={project} />
                         )
                     })
                 }

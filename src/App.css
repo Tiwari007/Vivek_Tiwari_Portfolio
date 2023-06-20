@@ -23,17 +23,28 @@ html {
 /* NAVIGATION BAR STYLING STARTS  */
 
 .navbar {
-  width: 80%;
+  z-index: 2;
+  width: 50%;
   margin: auto;
-  height: 5rem;
+  height: 4rem;
   background-color: #212428;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: sticky;
-    top: 0; */
+  position: sticky;
+    top: 0;
   border-radius: 15px 50px;
+}
+
+.navbar a{
+  padding: 0 2rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.363)
+}
+
+.navbar a:hover{
+  color: rgba(11, 55, 105, 0.705);
 }
 
 
@@ -71,14 +82,14 @@ html {
   padding-left: 10rem;
   line-height: 2rem;
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
 
 
 .about--me .name b {
-  font: 400 150% "Quattrocento Sans";
+  font: 400 120% "Quattrocento Sans";
   color: #fee;
   text-shadow: -6px -3px 14px, 0 0 2px, 0 0 6em #ff4444bd, 2px 3px 0.5em #ff4444, 0 0 0.1em #ff4444c4, -1px 4px 3px #000;
   line-height: 5rem;
@@ -264,162 +275,6 @@ html {
 }
 
 /* download resume styling ends */
-
-/* Connect With Me Styling Starts */
-
-.connect--with--me {
-  margin-top: 4rem;
-}
-
-.wrapper {
-  display: flex;
-}
-
-.wrapper a {
-  color: #000000;
-}
-
-.wrapper .icon {
-  position: relative;
-  background: #eeeeeea4;
-  color: #000000;
-  font-weight: bold;
-  border-radius: 50%;
-  padding: 5px;
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(133, 21, 21, 0.76);
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #3d2929bd, 0 0 0.5em #b69797, 0 0 0.1em #0f0909c4, 0 10px 3px #000;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation: iconBlink infinite linear 3s;
-
-}
-
-@keyframes iconBlink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  79% {
-    color: #302f2f;
-  }
-
-  80% {
-
-    text-shadow: none;
-  }
-
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  82% {
-    color: #383838;
-    text-shadow: none;
-  }
-
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  92% {
-    color: #313131;
-    text-shadow: none;
-  }
-
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 10px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(11, 10, 54, 0.1);
-}
-
-.wrapper .discord:hover,
-.wrapper .discord:hover .tooltip,
-.wrapper .discord:hover .tooltip::before {
-  background: #7289da;
-  color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1D9BF0;
-  color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
-  color: #ffffff;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #333333;
-  color: #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
-  color: #ffffff;
-}
-
-
-
-
-/* Connnect with me Styling ends here */
 
 
 
@@ -775,7 +630,7 @@ html {
 
 .card-hover {
   min-width: 300px;
-  height: 350px;
+  height: 450px;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.08);
@@ -798,6 +653,7 @@ html {
   opacity: 1;
   transform: translate(-50%, 0);
   transition: all 0.3s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+  cursor: pointer;
 }
 
 .card-hover:hover img {
@@ -807,7 +663,7 @@ html {
 
 .card-hover__content {
   text-align: center;
-  width: 67%;
+  width: 100%;
   background-color: #86B971;
   padding: 0 60px 50px;
   position: absolute;
@@ -851,8 +707,14 @@ html {
   color: #2d7f0b;
 }
 
-.card-hover__text {
-  font-size: 0.75rem;
+.card-hover__text ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .card-hover__link {
@@ -870,15 +732,11 @@ html {
   transition: all 0.35s;
 }
 
-.card-hover__link:hover svg {
-  transform: translateX(4px);
+.card-hover__link span:hover{
+  color: rgba(0, 0, 0, 0.712);
+  transform: scale(1.2);
 }
 
-.card-hover__link svg {
-  width: 18px;
-  margin-left: 4px;
-  transition: transform 0.3s;
-}
 
 
 .card-hover img {
@@ -897,3 +755,169 @@ html {
 }
 
 /* PROJECT STYLING ENDS */
+
+
+
+/* Footer Styling Starts */
+
+footer {
+  margin: 4rem 0 0 0;
+  height: 10rem;
+  background-color: rgba(7, 7, 7, 0.363);
+  color: white;
+  box-shadow: 0 -5px 5px -5px #333;
+}
+
+footer .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer .wrapper a {
+  color: #000000;
+}
+
+footer .wrapper .icon {
+  position: relative;
+  background: #eeeeeea4;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(133, 21, 21, 0.76);
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #3d2929bd, 0 0 0.5em #b69797, 0 0 0.1em #0f0909c4, 0 10px 3px #000;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: iconBlink infinite linear 3s;
+
+}
+
+@keyframes iconBlink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  79% {
+    color: #302f2f;
+  }
+
+  80% {
+
+    text-shadow: none;
+  }
+
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  82% {
+    color: #383838;
+    text-shadow: none;
+  }
+
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  92% {
+    color: #313131;
+    text-shadow: none;
+  }
+
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+footer .wrapper .tooltip {
+  position: absolute;
+  top: 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+footer .wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+footer .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+footer .wrapper .icon:hover span,
+footer .wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(11, 10, 54, 0.1);
+}
+
+footer .wrapper .discord:hover,
+footer .wrapper .discord:hover .tooltip,
+footer .wrapper .discord:hover .tooltip::before {
+  background: #7289da;
+  color: #ffffff;
+}
+
+footer .wrapper .twitter:hover,
+footer .wrapper .twitter:hover .tooltip,
+footer .wrapper .twitter:hover .tooltip::before {
+  background: #1D9BF0;
+  color: #ffffff;
+}
+
+footer .wrapper .instagram:hover,
+footer .wrapper .instagram:hover .tooltip,
+footer .wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+footer .wrapper .github:hover,
+footer .wrapper .github:hover .tooltip,
+footer .wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+footer .wrapper .youtube:hover,
+footer .wrapper .youtube:hover .tooltip,
+footer .wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+
+
+
+/* Footer Styling ends here */
