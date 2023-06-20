@@ -1,0 +1,42 @@
+[
+    {
+        "name": "HTML",
+        "percentage": "80%",
+        "class": "shadow-html"
+    },
+    {
+        "name": "CSS",
+        "percentage": "80%",
+        "class": "shadow-css"
+    },
+    {
+        "name": "JavaScript",
+        "percentage": "90%",
+        "class": "shadow-js"
+    },
+    {
+        "name": "React JS",
+        "percentage": "70%",
+        "class": "shadow-react"
+    },
+    {
+        "name": "Node JS",
+        "percentage": "60%",
+        "class": "shadow-node"
+    },
+    {
+        "name": "TypeScript",
+        "percentage": "60%",
+        "class": "shadow-ts"
+    },
+    {
+        "name": "Github",
+        "percentage": "80%",
+        "class": "shadow-github"
+    },
+    {
+        "name": "Python",
+        "percentage": "50%",
+        "class": "shadow-python"
+    }
+]
