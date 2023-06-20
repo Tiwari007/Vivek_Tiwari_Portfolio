@@ -1,3 +1,5 @@
+import profile_pic from '../assets/Profile Pic Yellow.jpg'
+
 const Dashboard = () => {
 
     return (
@@ -38,9 +40,10 @@ const Dashboard = () => {
 
                 </div>
                 <div className="about--picture">
-                    <img src="https://pbs.twimg.com/media/Fxkxp-AXsAMA5OE?format=jpg&name=medium" alt="about--me" />
+                    <img src={profile_pic} alt="about--me" />
                 </div>
             </div>
+            <hr style={{color: "red", height: "5px"}} />
         </div>
     )
 }
