@@ -1,11 +1,9 @@
 import profile_pic from '../assets/Profile Pic Yellow.jpg'
+import myResume from '../assets/Vivek Resume For External Company.pdf'
 
 const Dashboard = () => {
 
 
-    const downloadResume = () => {
-
-    }
 
     return (
         <div className="dashboard" id="dashboard">
@@ -20,7 +18,7 @@ const Dashboard = () => {
 
                     <div className="download--resume">
                         <a
-                            href=""
+                            href={myResume}
                             download="Vivek_Tiwari_Resume"
                             target="_blank"
                             rel="noreferrer"
