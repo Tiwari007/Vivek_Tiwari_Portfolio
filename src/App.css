@@ -527,13 +527,13 @@ html {
 
 @-webkit-keyframes anim_circle-html {
   to {
-    stroke-dashoffset: 98;
+    stroke-dashoffset: 78;
   }
 }
 
 @keyframes anim_circle-html {
   to {
-    stroke-dashoffset: 98;
+    stroke-dashoffset: 78;
   }
 }
 

@@ -11,22 +11,22 @@
     },
     {
         "name": "JavaScript",
-        "percentage": "90%",
+        "percentage": "80%",
         "class": "shadow-js"
     },
     {
         "name": "React JS",
-        "percentage": "70%",
+        "percentage": "80%",
         "class": "shadow-react"
     },
     {
         "name": "Node JS",
-        "percentage": "60%",
+        "percentage": "80%",
         "class": "shadow-node"
     },
     {
         "name": "TypeScript",
-        "percentage": "60%",
+        "percentage": "80%",
         "class": "shadow-ts"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "name": "Python",
-        "percentage": "50%",
+        "percentage": "80%",
         "class": "shadow-python"
     }
 ]
