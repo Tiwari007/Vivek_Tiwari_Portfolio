@@ -4,7 +4,8 @@ import ParticleBackground from './components/ParticleBackground';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import DrawerAppBar from './components/NavigationBar';
-import Footer from './pages/Footer';
+// import Footer from './pages/Footer';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Dashboard />
           <Skills />
           <Projects />
-          <Footer />
+          {/* <Footer /> */}
+          <ContactUs />
         </DrawerAppBar>
       </div>
     </>

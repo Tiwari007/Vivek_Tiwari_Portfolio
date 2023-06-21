@@ -11,6 +11,7 @@ html {
   font-size: 16px;
   font-family: 'Quattrocento Sans', sans-serif;
   background-color: hsla(240, 22%, 7%, 0.089);
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -296,6 +297,24 @@ html {
   .about--picture img {
     margin: unset;
   }
+
+  .contactUs__container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactUs__card{
+    width: 80%;
+    height: auto;
+  }
+  
+  .contactUs__form{
+    width: 80%;
+    height: auto;
+    border: 1px solid white;
+    margin: 4rem 0;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -758,29 +777,95 @@ html {
 
 
 
-/* Footer Styling Starts */
+/* CONTACT US STYLING STARTS */
 
-footer {
+/* footer {
   margin: 4rem 0 0 0;
   height: 10rem;
   background-color: rgba(7, 7, 7, 0.363);
   color: white;
   box-shadow: 0 -5px 5px -5px #333;
-}
+} */
 
-footer .wrapper {
-  height: 100%;
+.contact__us{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
 }
 
-footer .wrapper a {
+.contact__us h3{
+  color: rgba(255, 0, 0, 0.733);
+}
+
+.contact__us h1{
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 2rem;
+}
+
+.contactUs__container{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0;
+}
+
+.contactUs__card{
+  width: 40%;
+  border-radius: 1rem !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
+
+.contactUs__form{
+  background-color: #171527e3;
+  color: rgba(255, 255, 255, 0.842) !important;
+  padding: 20px;
+  width: 40%;
+  border-radius: 1rem !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
+
+
+
+
+.contactUs__card__content .title{
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.contactUs__card__content .designation{
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.contactUs__card__content .connect__headline{
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.contactUs__card__content .email{
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.contactUs__card__content .find{
+  color: rgba(255, 255, 255, 0.774);
+}
+
+
+
+
+
+.social__media .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.social__media .wrapper a {
   color: #000000;
 }
 
-footer .wrapper .icon {
+.social__media .wrapper .icon {
   position: relative;
   background: #eeeeeea4;
   color: #000000;
@@ -844,7 +929,7 @@ footer .wrapper .icon {
   }
 }
 
-footer .wrapper .tooltip {
+.social__media .wrapper .tooltip {
   position: absolute;
   top: 10px;
   font-size: 14px;
@@ -858,7 +943,7 @@ footer .wrapper .tooltip {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-footer .wrapper .tooltip::before {
+.social__media .wrapper .tooltip::before {
   position: absolute;
   content: "";
   height: 8px;
@@ -870,35 +955,35 @@ footer .wrapper .tooltip::before {
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-footer .wrapper .icon:hover .tooltip {
+.social__media .wrapper .icon:hover .tooltip {
   top: -45px;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-footer .wrapper .icon:hover span,
-footer .wrapper .icon:hover .tooltip {
+.social__media .wrapper .icon:hover span,
+.social__media .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(11, 10, 54, 0.1);
 }
 
-footer .wrapper .discord:hover,
-footer .wrapper .discord:hover .tooltip,
-footer .wrapper .discord:hover .tooltip::before {
+.social__media .wrapper .discord:hover,
+.social__media .wrapper .discord:hover .tooltip,
+.social__media .wrapper .discord:hover .tooltip::before {
   background: #7289da;
   color: #ffffff;
 }
 
-footer .wrapper .twitter:hover,
-footer .wrapper .twitter:hover .tooltip,
-footer .wrapper .twitter:hover .tooltip::before {
+.social__media .wrapper .twitter:hover,
+.social__media .wrapper .twitter:hover .tooltip,
+.social__media .wrapper .twitter:hover .tooltip::before {
   background: #1D9BF0;
   color: #ffffff;
 }
 
-footer .wrapper .instagram:hover,
-footer .wrapper .instagram:hover .tooltip,
-footer .wrapper .instagram:hover .tooltip::before {
+.social__media .wrapper .instagram:hover,
+.social__media .wrapper .instagram:hover .tooltip,
+.social__media .wrapper .instagram:hover .tooltip::before {
   background: #E4405F;
   color: #ffffff;
 }
@@ -910,9 +995,9 @@ footer .wrapper .github:hover .tooltip::before {
   color: #ffffff;
 }
 
-footer .wrapper .youtube:hover,
-footer .wrapper .youtube:hover .tooltip,
-footer .wrapper .youtube:hover .tooltip::before {
+.social__media .wrapper .youtube:hover,
+.social__media .wrapper .youtube:hover .tooltip,
+.social__media .wrapper .youtube:hover .tooltip::before {
   background: #CD201F;
   color: #ffffff;
 }
@@ -920,4 +1005,4 @@ footer .wrapper .youtube:hover .tooltip::before {
 
 
 
-/* Footer Styling ends here */
+/* CONTACT US STYLING ENDS */

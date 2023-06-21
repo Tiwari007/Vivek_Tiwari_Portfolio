@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Dashboard', 'Skills', 'Projects'];
+const navItems = ['Home', 'Dashboard', 'Skills', 'Projects', 'ContactUs'];
 
 function DrawerAppBar({ children }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
