@@ -19,7 +19,6 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 export default function ContactUsForm() {
 
-    console.log("env ", process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID);
     const [error, setError] = React.useState(false);
     const [openSuccessNotification, setOpenSuccessNotification] = React.useState(false);
     const [messageData, setMessageData] = React.useState({
