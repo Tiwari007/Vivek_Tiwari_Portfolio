@@ -6,7 +6,7 @@ const Dashboard = () => {
 
 
     return (
-        <div className="dashboard" id="dashboard">
+        <div className="dashboard" id="home">
             <div className="dashboard--container">
                 <div className="about--me">
                     <h2>Hi It's Me</h2>

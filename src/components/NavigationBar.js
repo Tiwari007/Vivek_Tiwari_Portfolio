@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Dashboard', 'Skills', 'Projects', 'ContactUs'];
+const navItems = ['Home', 'Skills', 'Projects', 'ContactUs'];
 
 function DrawerAppBar({ children }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -26,7 +26,7 @@ function DrawerAppBar({ children }) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: "inherit" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
         My Resume 🚀
       </Typography>
@@ -35,7 +35,7 @@ function DrawerAppBar({ children }) {
         {navItems.map((item, index) => (
           <ListItem key={index} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <a href={`#${item.toLowerCase()}`}>
+              <a sx={{textDecoration: "none", color: "#ffffffd4"}} href={`#${item.toLowerCase()}`}>
                 <ListItemText primary={item} />
               </a>
             </ListItemButton>
@@ -87,7 +87,7 @@ function DrawerAppBar({ children }) {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: "#1a1818", color: "#ffffffd4" },
           }}
         >
           {drawer}

@@ -665,11 +665,12 @@ html {
 }
 
 .card-hover:hover .card-hover__content {
-  background-color: #DEE8C2;
+  background-color: #20201f;
   bottom: 100%;
   transform: translateY(100%);
   padding: 50px 60px;
   transition: all 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
+  color: rgba(255, 255, 255, 0.863);
 }
 
 .card-hover:hover .card-hover__link {
@@ -687,7 +688,7 @@ html {
 .card-hover__content {
   text-align: center;
   width: 100%;
-  background-color: #86B971;
+  background-color: #000000;
   padding: 0 60px 50px;
   position: absolute;
   bottom: 0;
@@ -696,6 +697,7 @@ html {
   transition: all 0.35s 0.35s cubic-bezier(0.1, 0.72, 0.4, 0.97);
   will-change: bottom, background-color, transform, padding;
   z-index: 1;
+  color: rgba(255, 255, 255, 0.822);
 }
 
 .card-hover__content::before,
