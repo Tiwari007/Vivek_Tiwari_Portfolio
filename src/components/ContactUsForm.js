@@ -58,7 +58,7 @@ export default function ContactUsForm() {
             setError(false);
             console.log(messageData);
 
-            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID , process.env.REACT_APP_TEMPLATE_ID , form.current , process.env.REACT_APP_PUBLIC_KEYS )
+            emailjs.sendForm(process.env.REACT_APP_SERVICE_ID || 'service_oecx71w' , process.env.REACT_APP_TEMPLATE_ID || 'template_vq9jmbh' , form.current , process.env.REACT_APP_PUBLIC_KEYS || 'v-gDUE5DrTkQA_Mjn' )
                 .then((result) => {
                     setOpenSuccessNotification(true);
                 }, (error) => {
