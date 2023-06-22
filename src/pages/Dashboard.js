@@ -20,8 +20,6 @@ const Dashboard = () => {
                         <a
                             href={myResume}
                             download="Vivek_Tiwari_Resume"
-                            target="_blank"
-                            rel="noreferrer"
                         >
                             <div className="wrapper">
                                 <button>

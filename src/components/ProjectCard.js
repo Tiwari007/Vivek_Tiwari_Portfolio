@@ -1,5 +1,5 @@
 const ProjectCard = ({project}) => {
-    console.log("projectdata", project);
+    // console.log("projectdata", project);
     return (
         <div className="card-hover">
             <div className="card-hover__content">

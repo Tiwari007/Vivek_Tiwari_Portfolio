@@ -333,6 +333,10 @@ html {
   .about--picture img {
     margin: unset;
   }
+
+  .skills--title {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {

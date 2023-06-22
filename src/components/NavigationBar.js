@@ -32,8 +32,8 @@ function DrawerAppBar({ children }) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+        {navItems.map((item, index) => (
+          <ListItem key={index} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <a href={`#${item.toLowerCase()}`}>
                 <ListItemText primary={item} />
@@ -67,8 +67,8 @@ function DrawerAppBar({ children }) {
             My Resume 🚀
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <a href={`#${item.toLowerCase()}`}>
+            {navItems.map((item, index) => (
+              <a key={index} href={`#${item.toLowerCase()}`}>
               <Button key={item} sx={{ color: '#fff' }}>
                 {item}
               </Button>

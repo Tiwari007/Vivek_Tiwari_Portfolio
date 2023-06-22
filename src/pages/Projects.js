@@ -3,7 +3,7 @@ import { projectData } from '../data/projectData'
 
 const Projects = () => {
 
-    console.log(projectData);
+    // console.log(projectData);
 
     return (
         <div className="project--container" id='projects'>

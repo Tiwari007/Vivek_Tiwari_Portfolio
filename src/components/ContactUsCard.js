@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 const ContactUsCard = () => {
 
     return (
-        <Card maxWidth="xs" className="contactUs__card" sx={{ minWidth: 300, padding: "20px", backgroundColor: "#171527e3", color: "white" }}>
+        <Card maxwidth="xs" className="contactUs__card" sx={{ minWidth: 300, padding: "20px", backgroundColor: "#171527e3", color: "white" }}>
             <CardMedia
                 component="img"
                 alt="green iguana"
