@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Skills', 'Projects', 'ContactUs'];
+const navItems = ['Home', 'Skills', 'Projects', 'ContactMe'];
 
 function DrawerAppBar({ children }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -36,7 +36,7 @@ function DrawerAppBar({ children }) {
           <ListItem key={index} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <a sx={{textDecoration: "none", color: "#ffffffd4"}} href={`#${item.toLowerCase()}`}>
-                <ListItemText primary={item} />
+                <ListItemText sx={{color: "white", textDecoration: "none"}} primary={item} />
               </a>
             </ListItemButton>
           </ListItem>
