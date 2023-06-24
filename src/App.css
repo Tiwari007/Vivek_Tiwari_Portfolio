@@ -89,61 +89,13 @@ html {
 
 
 
-.about--me .name b {
-  font: 400 120% "Quattrocento Sans";
+.about--me .name {
+  font: 400 4rem "Quattrocento Sans";
   color: #fee;
   text-shadow: -6px -3px 14px, 0 0 2px, 0 0 6em #ff4444bd, 2px 3px 0.5em #ff4444, 0 0 0.1em #ff4444c4, -1px 4px 3px #000;
   line-height: 5rem;
 }
 
-.about--me .name b span {
-  animation: blink linear infinite 2s;
-}
-
-.about--me .name b span:nth-of-type(2) {
-  animation: blink linear infinite 3s;
-}
-
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  79% {
-    color: #302f2f;
-  }
-
-  80% {
-
-    text-shadow: none;
-  }
-
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  82% {
-    color: #383838;
-    text-shadow: none;
-  }
-
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  92% {
-    color: #313131;
-    text-shadow: none;
-  }
-
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
 
 .about--picture {
   display: flex;
@@ -443,8 +395,9 @@ html {
 
 .skills {
   height: auto;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  padding: 10px;
   color: rgba(255, 255, 255, 0.89);
   /* background-color: #00000083; */
 }
@@ -463,224 +416,10 @@ html {
   flex-wrap: wrap;
   background-color: #201e1e83;
   padding: 2rem 0;
-}
-
-.progressbar {
-  position: relative;
-  width: 170px;
-  height: 170px;
-  margin: 3em;
-  transform: rotate(-90deg);
-}
-
-.progressbar__svg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.progressbar__svg-circle {
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke-width: 8;
-  stroke-dasharray: 440;
-  stroke-dashoffset: 440;
-  stroke: white;
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-}
-
-.shadow-html {
-  filter: drop-shadow(0 0 5px #ff6633);
-}
-
-.shadow-css {
-  filter: drop-shadow(0 0 5px #33bbff);
-}
-
-.shadow-js {
-  filter: drop-shadow(0 0 5px #ff33ff);
-}
-
-.shadow-react {
-  filter: drop-shadow(0 0 5px #ffff33);
-}
-
-.shadow-node {
-  filter: drop-shadow(0 0 5px #3377ff);
-}
-
-.shadow-ts {
-  filter: drop-shadow(0 0 5px #55ff33);
-}
-
-.shadow-github {
-  filter: drop-shadow(0 0 5px #33ffff);
-}
-
-.shadow-python {
-  filter: drop-shadow(0 0 5px #ff3333);
-}
-
-.circle-html {
-  -webkit-animation: anim_circle-html 2s ease-in-out forwards;
-  animation: anim_circle-html 2s ease-in-out forwards;
-}
-
-.circle-css {
-  -webkit-animation: anim_circle-css 2s ease-in-out forwards;
-  animation: anim_circle-css 2s ease-in-out forwards;
-}
-
-.circle-js {
-  -webkit-animation: anim_circle-scss 2s ease-in-out forwards;
-  animation: anim_circle-scss 2s ease-in-out forwards;
-}
-
-.circle-react {
-  -webkit-animation: anim_circle-js 2s ease-in-out forwards;
-  animation: anim_circle-js 2s ease-in-out forwards;
-}
-
-.circle-node {
-  -webkit-animation: anim_circle-ts 2s ease-in-out forwards;
-  animation: anim_circle-ts 1s ease-in-out forwards;
-}
-
-.circle-ts {
-  -webkit-animation: anim_circle-node 2s ease-in-out forwards;
-  animation: anim_circle-node 1s ease-in-out forwards;
-}
-
-.circle-github {
-  -webkit-animation: anim_circle-react 2s ease-in-out forwards;
-  animation: anim_circle-react 2s ease-in-out forwards;
-}
-
-.circle-python {
-  -webkit-animation: anim_circle-angular 2s ease-in-out forwards;
-  animation: anim_circle-angular 2s ease-in-out forwards;
+  gap: 2rem;
 }
 
 
-.progressbar__text {
-  position: absolute;
-  top: 50%;
-  left: -15%;
-  transform: translate(-50%, -50%) rotate(90deg);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-}
-
-.progressbar__percentage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 0.25em 0.5em;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 0.25em;
-  transform: translate(-50%, -50%) rotate(90deg);
-  font-size: 1.5rem;
-}
-
-@-webkit-keyframes anim_circle-html {
-  to {
-    stroke-dashoffset: 78;
-  }
-}
-
-@keyframes anim_circle-html {
-  to {
-    stroke-dashoffset: 78;
-  }
-}
-
-@-webkit-keyframes anim_circle-css {
-  to {
-    stroke-dashoffset: 66;
-  }
-}
-
-@keyframes anim_circle-css {
-  to {
-    stroke-dashoffset: 66;
-  }
-}
-
-@-webkit-keyframes anim_circle-js {
-  to {
-    stroke-dashoffset: 132;
-  }
-}
-
-@keyframes anim_circle-js {
-  to {
-    stroke-dashoffset: 132;
-  }
-}
-
-@-webkit-keyframes anim_circle-react {
-  to {
-    stroke-dashoffset: 88;
-  }
-}
-
-@keyframes anim_circle-react {
-  to {
-    stroke-dashoffset: 88;
-  }
-}
-
-@-webkit-keyframes anim_circle-node {
-  to {
-    stroke-dashoffset: 198;
-  }
-}
-
-@keyframes anim_circle-node {
-  to {
-    stroke-dashoffset: 198;
-  }
-}
-
-@-webkit-keyframes anim_circle-ts {
-  to {
-    stroke-dashoffset: 308;
-  }
-}
-
-@keyframes anim_circle-ts {
-  to {
-    stroke-dashoffset: 308;
-  }
-}
-
-@-webkit-keyframes anim_circle-github {
-  to {
-    stroke-dashoffset: 387.2;
-  }
-}
-
-@keyframes anim_circle-github {
-  to {
-    stroke-dashoffset: 387.2;
-  }
-}
-
-@-webkit-keyframes anim_circle-python {
-  to {
-    stroke-dashoffset: 418;
-  }
-}
-
-@keyframes anim_circle-python {
-  to {
-    stroke-dashoffset: 418;
-  }
-}
 
 /* SKILLS STYLING ENDS */
 
@@ -697,6 +436,7 @@ html {
   font-size: 3rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.842);
+  margin-bottom: 20px;
 }
 
 .projects {
@@ -943,53 +683,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(133, 21, 21, 0.76);
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #3d2929bd, 0 0 0.5em #b69797, 0 0 0.1em #0f0909c4, 0 10px 3px #000;
   cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation: iconBlink infinite linear 3s;
-
-}
-
-@keyframes iconBlink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  79% {
-    color: #302f2f;
-  }
-
-  80% {
-
-    text-shadow: none;
-  }
-
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  82% {
-    color: #383838;
-    text-shadow: none;
-  }
-
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-
-  92% {
-    color: #313131;
-    text-shadow: none;
-  }
-
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
 }
 
 .social__media .wrapper .tooltip {
@@ -1037,33 +731,13 @@ html {
   color: #ffffff;
 }
 
-.social__media .wrapper .twitter:hover,
-.social__media .wrapper .twitter:hover .tooltip,
-.social__media .wrapper .twitter:hover .tooltip::before {
-  background: #1D9BF0;
-  color: #ffffff;
-}
-
-.social__media .wrapper .instagram:hover,
-.social__media .wrapper .instagram:hover .tooltip,
-.social__media .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
-  color: #ffffff;
-}
-
-footer .wrapper .github:hover,
-footer .wrapper .github:hover .tooltip,
-footer .wrapper .github:hover .tooltip::before {
+.social__media .wrapper .github:hover,
+.social__media .wrapper .github:hover .tooltip,
+foo.social__mediater .wrapper .github:hover .tooltip::before {
   background: #333333;
   color: #ffffff;
 }
 
-.social__media .wrapper .youtube:hover,
-.social__media .wrapper .youtube:hover .tooltip,
-.social__media .wrapper .youtube:hover .tooltip::before {
-  background: #CD201F;
-  color: #ffffff;
-}
 
 
 

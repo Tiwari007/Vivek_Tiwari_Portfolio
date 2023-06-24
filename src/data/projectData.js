@@ -7,13 +7,13 @@ export let projectData = [
     {
         "image": AppVilla,
         "title": "App Villa Clone",
-        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI", "NODE JS"],
-        "url": "https://github.com/Tiwari007/AppVilla_Clone_Repo"
+        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI"],
+        "url": "https://appvillaclone.netlify.app/"
     },
     {
         "image": TaskGenerator,
         "title": "Task Generator",
-        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI", "NODE JS"],
+        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI"],
         "url": "https://github.com/Tiwari007/Task_Generator_Using_React"
     },
     {
@@ -25,8 +25,8 @@ export let projectData = [
     {
         "image": MemoryGame,
         "title": "Memory Game",
-        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI", "NODE JS"],
-        "url": "https://github.com/Tiwari007/Cards-Memory-Game"
+        "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI"],
+        "url": "https://memorycheckerusingcards.netlify.app/"
     },
     {
         "image": SolarSystem,

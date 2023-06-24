@@ -11,7 +11,7 @@ const Dashboard = () => {
                 <div className="about--me">
                     <h2>Hi It's Me</h2>
                     <br />
-                    <h1 className="name">I'm <b>V<span>iv</span>e<span>k T</span>iw<span>a</span><span>ri</span></b></h1>
+                    <h1 className="name">Vivek Tiwari</h1>
                     <br />
                     <p>Mern Stack Developer</p>
                     <p>Having 2 Years of Experience</p>

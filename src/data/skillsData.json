@@ -1,42 +1,48 @@
+
 [
     {
-        "name": "HTML",
-        "percentage": "80%",
-        "class": "shadow-html"
+        "name": "html5",
+        "color": "white",
+        "background": "E34F26"
     },
     {
-        "name": "CSS",
-        "percentage": "80%",
-        "class": "shadow-css"
+        "name": "css3",
+        "color": "shadow-html",
+        "background": "1572B6"
     },
     {
-        "name": "JavaScript",
-        "percentage": "80%",
-        "class": "shadow-js"
+        "name": "javascript",
+        "color": "black",
+        "background": "F7DF1E"
     },
     {
-        "name": "React JS",
-        "percentage": "80%",
-        "class": "shadow-react"
+        "name": "react",
+        "color": "61DAFB",
+        "background": "20232A"
     },
     {
-        "name": "Node JS",
-        "percentage": "80%",
-        "class": "shadow-node"
+        "name": "node.js",
+        "color": "white",
+        "background": "43853D"
     },
     {
-        "name": "TypeScript",
-        "percentage": "80%",
-        "class": "shadow-ts"
+        "name": "typescript",
+        "color": "white",
+        "background": "007ACC"
     },
     {
         "name": "Github",
-        "percentage": "80%",
-        "class": "shadow-github"
+        "color": "white",
+        "background": "100000"
     },
     {
-        "name": "Python",
-        "percentage": "80%",
-        "class": "shadow-python"
+        "name": "graphql",
+        "color": "white",
+        "background": "20232A"
+    },
+    {
+        "name": "python",
+        "color": "white",
+        "background": "14354C"
     }
 ]

@@ -1,28 +1,15 @@
-import skillsData from '../data/skillsData.json'
+import skills from "../data/skillsData";
 
 const Skills = () => {
   return (
     <div className="skills--dashboard" id="skills">
       <div className="skills">
-        <div className="skills--title">Skill</div>
+        <div className="skills--title">Skills</div>
         <div className="container__progressbars">
           {
-            skillsData.map((skill, index) => {
+            skills.map((skill, index) => {
               return (
-                <div key={index} className="progressbar">
-                  <svg className="progressbar__svg">
-                    <circle
-                      cx="80"
-                      cy="80"
-                      r="70"
-                      className={`progressbar__svg-circle circle-html ${skill.class}`}
-                    >
-                      {" "}
-                    </circle>
-                  </svg>
-                  <span className="progressbar__percentage">{skill.percentage}</span>
-                  <span className="progressbar__text shadow-html">{skill.name}</span>
-                </div>
+                <img src={`https://img.shields.io/badge/${skill.name[0].toUpperCase() + skill.name.slice(1)}-${skill.background}?style=for-the-badge&logo=${skill.name}&logoColor=${skill.color}`} height="40px" width="100px" alt="skills"/>
               )
             })
           }
