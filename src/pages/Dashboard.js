@@ -1,12 +1,28 @@
+import React, { useEffect, useRef, useState } from 'react';
+
 import profile_pic from '../assets/Profile Pic Yellow.jpg'
 import myResume from '../assets/Vivek Resume For External Company.pdf'
 
 const Dashboard = () => {
 
+    const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const { top } = componentRef.current.getBoundingClientRect();
+          const isVisible = top < window.innerHeight - 100;
+          setIsVisible(isVisible);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
 
 
     return (
-        <div className="dashboard" id="home">
+        <div className={`dashboard ${isVisible ? 'slide-in' : ''}`} id="home" ref={componentRef}>
             <div className="dashboard--container">
                 <div className="about--me">
                     <h2>Hi It's Me</h2>

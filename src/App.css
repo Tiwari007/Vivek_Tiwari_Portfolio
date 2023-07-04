@@ -57,11 +57,19 @@ html {
 
 /* DASHBOARD STYLING STARTS */
 
+.dashboard.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .dashboard {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: translateX(200px);
+  transition: opacity 0.5s, transform 1s;
 }
 
 .dashboard--container {
@@ -292,6 +300,7 @@ html {
 }
 
 @media screen and (max-width: 600px) {
+
   .dashboard--container {
     flex-direction: column;
   }
@@ -304,9 +313,15 @@ html {
   .about--me {
     font-size: 1.2;
     padding-left: 0;
-    /* padding: 30px; */
+    margin-top: 5rem;
+    text-align: center;
   }
 
+  .download--resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .about--me .name b {
     font: 400 80% "Quattrocento Sans";
   }
@@ -325,6 +340,11 @@ html {
 }
 
 @media screen and (max-width: 500px) {
+
+  .container__progressbars{
+    width: 100% !important;
+    margin: auto;
+  }
 
   .dashboard{
     margin: 3rem 0;
@@ -361,7 +381,6 @@ html {
   .about--me {
     font-size: 1;
     padding-left: 0;
-    /* padding: 30px; */
   }
 
   .about--me .name b {
@@ -410,13 +429,25 @@ html {
 }
 
 .container__progressbars {
+  width:  50%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #201e1e83;
+  /* background-color: #201e1e83; */
   padding: 2rem 0;
   gap: 2rem;
+}
+
+.skills__badge{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.skills__badge:hover{
+  box-shadow: rgb(255 255 255) -9px 20px 60px -12px inset, rgb(255 255 255) -2px 1px 4px 0px;
+  transform: scale(1.05);
+  transition: transform .2s ease-in-out;
 }
 
 
