@@ -57,19 +57,12 @@ html {
 
 /* DASHBOARD STYLING STARTS */
 
-.dashboard.slide-in {
-  opacity: 1;
-  transform: translateX(0);
-}
 
 .dashboard {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: translateX(200px);
-  transition: opacity 0.5s, transform 1s;
 }
 
 .dashboard--container {
@@ -448,6 +441,7 @@ html {
   box-shadow: rgb(255 255 255) -9px 20px 60px -12px inset, rgb(255 255 255) -2px 1px 4px 0px;
   transform: scale(1.05);
   transition: transform .2s ease-in-out;
+  cursor: pointer;
 }
 
 
