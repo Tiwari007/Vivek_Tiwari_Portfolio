@@ -16,7 +16,7 @@ html {
 
 .App {
   z-index: 1;
-  background-color: #0e0e1727;
+  background-color: #ffffff1e;
   position: absolute;
 }
 
@@ -27,7 +27,7 @@ html {
   z-index: 2;
   width: 50%;
   margin: auto;
-  height: 4rem;
+  height: 5rem;
   background-color: #212428;
   color: white;
   display: flex;
@@ -39,13 +39,13 @@ html {
 }
 
 .navbar a{
-  padding: 0 2rem;
+  margin: 0 3rem;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.363)
 }
 
 .navbar a:hover{
-  color: rgba(11, 55, 105, 0.705);
+  color: rgba(178, 186, 196, 0.911);
 }
 
 
