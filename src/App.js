@@ -11,9 +11,7 @@ import AnimatedCursor from "react-animated-cursor"
 function App() {
   return (
     <>
-      <ParticleBackground />
-      <div className='App'>
-        <AnimatedCursor innerSize={12}
+    <AnimatedCursor innerSize={12}
           outerSize={12}
           color='255, 255, 255'
           outerAlpha={0.5}
@@ -32,6 +30,8 @@ function App() {
             'button',
             '.link'
           ]} />
+      <ParticleBackground />
+      <div className='App'>
         <DrawerAppBar>
           <Dashboard />
           <Skills />

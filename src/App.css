@@ -401,8 +401,10 @@ html {
 /* SKILLS STYLING STARTS */
 
 .skills--dashboard {
-  height: auto;
-  margin: 1rem 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills {

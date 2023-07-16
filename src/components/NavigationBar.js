@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import portfolioIcon from '../assets/portfolio logo 1.png'
 
 const drawerWidth = 240;
 const navItems = ['Home', 'Skills', 'Projects', 'ContactMe'];
@@ -28,7 +29,7 @@ function DrawerAppBar({ children }) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        My Resume 🚀
+      <img src={portfolioIcon} alt='portfolioIcon' width="120px" height="60px"  style={{mixBlendMode: "color-dodge"}}/>
       </Typography>
       <Divider />
       <List>
@@ -62,9 +63,9 @@ function DrawerAppBar({ children }) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, mt: "6px" }}
           >
-            My Resume 🚀
+            <img src={portfolioIcon} alt='portfolioIcon' width="120px" height="60px" style={{mixBlendMode: "color-dodge"}}/>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item, index) => (
