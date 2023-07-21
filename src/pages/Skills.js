@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="skills--dashboard" id="skills">
       <div className="skills">
-        <div className="skills--title">Skills</div>
+        <div className="skills--title">Skills & Technologies</div>
         <div className="container__progressbars">
           {
             skills.map((skill, index) => {

@@ -48,6 +48,11 @@ const ContactUsCard = () => {
                         <a target="_blank" rel="noreferrer" href="https://github.com/Tiwari007"><span><i
                             className="fab fa-github"></i></span></a>
                     </li>
+                    <li className="icon discord">
+                        <span className="tooltip">LinkedIn</span>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/vivektiwari007/"><span><i
+                            className="fab fa-linkedin"></i></span></a>
+                    </li>
                 </ul>
             </CardActions>
         </Card>
