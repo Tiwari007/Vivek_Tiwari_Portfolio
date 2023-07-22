@@ -6,7 +6,7 @@ import Skills from './pages/Skills';
 import DrawerAppBar from './components/NavigationBar';
 // import Footer from './pages/Footer';
 import ContactUs from './pages/ContactUs';
-import AnimatedCursor from "react-animated-cursor"
+// import AnimatedCursor from "react-animated-cursor"
 
 function App() {
   return (

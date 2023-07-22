@@ -1,5 +1,5 @@
-import profile_pic from '../assets//Profile Pic Light Blue.png'
-import myResume from '..assets/Vivek Tiwari Resume.pdf'
+import profile_pic from '../assets/Profile Pic Light Blue.png'
+import myResume from '../assets/Vivek Tiwari Resume.pdf'
 
 const Dashboard = () => {
 
