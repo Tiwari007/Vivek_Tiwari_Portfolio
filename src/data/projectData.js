@@ -1,7 +1,9 @@
 import AppVilla from "../assets/App Villa.png"
-import TaskGenerator from '../assets/Task Generator Gif.gif'
+import TaskGenerator from '../assets/Task Generator.png'
 import MemoryGame from '../assets/Memory Game.png'
-import SolarSystem from '../assets/Solar System Gif.gif'
+import SolarSystem from '../assets/Solar System.png'
+import PortFolio from '../assets/portfolio_Image.gif'
+import NetflixClone from '../assets/Netflix Clone.png'
  
 export let projectData = [
     {
@@ -17,7 +19,7 @@ export let projectData = [
         "url": "https://github.com/Tiwari007/Task_Generator_Using_React"
     },
     {
-        "image": "https://venturebeat.com/wp-content/uploads/2016/06/netflix-logo.png?fit=2048%2C2048&strip=all",
+        "image": NetflixClone,
         "title": "Netflix Clone",
         "technologyUsed": ["HTML", "CSS", "JS", "REACT", "MUI", "NODE JS"],
         "url": "https://netflixclone-70f4a.web.app/"
@@ -33,5 +35,11 @@ export let projectData = [
         "title": "Solar System",
         "technologyUsed": ["HTML", "CSS", "JS", "ThreeJS"],
         "url": "https://github.com/Tiwari007/Solar_System_Using_ThreeJS"
+    },
+    {
+        "image": PortFolio,
+        "title": "Portfolio",
+        "technologyUsed": ["React JS", "MUI", "React TS Particle", "EmailJS"],
+        "url": "https://buckyalita.netlify.app/"
     }
 ]
