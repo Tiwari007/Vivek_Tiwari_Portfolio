@@ -1,10 +1,28 @@
+import React, { useState, useEffect } from 'react';
 import profile_pic from '../assets/Profile Pic Light Blue.png'
 import myResume from '../assets/Vivek Tiwari Resume.pdf'
 
 const Dashboard = () => {
 
+    const [scrollY, setScrollY] = useState(0);
+
+    // Event handler to track scroll position
+    const handleScroll = () => {
+        setScrollY(window.scrollY);
+    };
+
+    useEffect(() => {
+        // Attach the scroll event listener when the component mounts
+        window.addEventListener('scroll', handleScroll);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className="dashboard" id="home">
+        <div className="dashboard" id="home" style={{ clipPath: `inset(${scrollY < 20 ? scrollY : 20}px 0 0 0)` }}>
             <div className="dashboard--container">
                 <div className="about--me">
                     <h2>Hi It's Me</h2>
@@ -32,7 +50,7 @@ const Dashboard = () => {
                     </div>
 
                     <div className="connect--with--me">
-                        
+
                     </div>
 
                 </div>

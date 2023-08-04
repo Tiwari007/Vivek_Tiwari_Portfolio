@@ -38,11 +38,11 @@ const ContactUsCard = () => {
             </CardContent>
             <CardActions className='social__media'>
                 <ul className="wrapper">
-                    <li className="icon discord">
+                    {/* <li className="icon discord">
                         <span className="tooltip">Discord</span>
                         <a target="_blank" rel="noreferrer" href="https://github.com/Tiwari007"><span><i
                             className="fab fa-discord"></i></span></a>
-                    </li>
+                    </li> */}
                     <li className="icon github">
                         <span className="tooltip">Github</span>
                         <a target="_blank" rel="noreferrer" href="https://github.com/Tiwari007"><span><i
