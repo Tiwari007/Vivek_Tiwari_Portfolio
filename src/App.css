@@ -12,6 +12,11 @@ html {
   font-family: 'Quattrocento Sans', sans-serif;
   background-color: hsla(240, 22%, 7%, 0.089);
   scroll-behavior: smooth;
+  display: flex;
+  /* align-content: space-around; */
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .App {
