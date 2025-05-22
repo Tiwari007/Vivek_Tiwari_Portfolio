@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import profile_pic from '../assets/Profile Pic Light Blue.png'
+import profile_pic from '../assets/Avatar.png'
 import myResume from '../assets/Tiwari_Vivek_Resume_2024.pdf'
 
 const Dashboard = () => {

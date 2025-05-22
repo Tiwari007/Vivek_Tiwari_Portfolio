@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
   /* box-sizing: border-box; */
@@ -18,7 +19,7 @@
 body,
 html {
   font-size: 16px;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Manrope', sans-serif !important;
   background-color: hsla(240, 22%, 7%, 0.089);
   scroll-behavior: smooth;
 }
@@ -90,19 +91,19 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
   color: white;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 100;
+  margin: 0 30px;
 }
 
 
 
 .about--me .name {
-  font: 400 4rem "Quattrocento Sans";
+  font: 400 4rem "Manrope";
   color: #fee;
-  text-shadow: -6px -3px 14px, 0 0 2px, 0 0 6em #ff4444bd, 2px 3px 0.5em #ff4444, 0 0 0.1em #ff4444c4, -1px 4px 3px #000;
+  text-shadow: -6px -3px 14px, 0 0 2px, 0 0 6em #000000bd, 2px 3px 0.5em #2000a8, 0 0 0.1em #00244bc4, -1px 4px 3px #000;
   line-height: 5rem;
 }
 
@@ -114,8 +115,9 @@ html {
 }
 
 .about--picture img {
-  width: 60%;
+  width: 70%;
   object-fit: fill;
+  border-radius: 50%;
 }
 
 /* download resume styling starts */
@@ -253,7 +255,7 @@ html {
   }
 
   .about--me .name b {
-    font: 400 100% "Quattrocento Sans";
+    font: 400 100% "Manrope";
   }
 
   .about--picture img {
@@ -289,7 +291,7 @@ html {
   }
 
   .about--me .name b {
-    font: 400 100% "Quattrocento Sans";
+    font: 400 100% "Manrope";
   }
 
   .about--picture img {
@@ -325,7 +327,7 @@ html {
     align-items: center;
   }
   .about--me .name b {
-    font: 400 80% "Quattrocento Sans";
+    font: 400 80% "Manrope";
   }
 
   .about--picture img {
@@ -386,7 +388,7 @@ html {
   }
 
   .about--me .name b {
-    font: 400 60% "Quattrocento Sans";
+    font: 400 60% "Manrope";
   }
 
   .about--picture img {
@@ -410,7 +412,7 @@ html {
 /* SKILLS STYLING STARTS */
 
 .skills--dashboard {
-  height: 100vh;
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,7 +435,7 @@ html {
 }
 
 .container__progressbars {
-  width:  50%;
+  width:  100%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -643,7 +645,7 @@ html {
 }
 
 .contactUs__container{
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
