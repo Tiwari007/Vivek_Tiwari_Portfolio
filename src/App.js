@@ -1,6 +1,6 @@
 import './App.css';
 import Dashboard from './pages/Dashboard';
-import ParticleBackground from './components/ParticleBackground';
+// import ParticleBackground from './components/ParticleBackground';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import DrawerAppBar from './components/NavigationBar';
@@ -9,7 +9,7 @@ import ContactUs from './pages/ContactUs';
 function App() {
   return (
     <>
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
       <div className='App'>
         <DrawerAppBar>
           <Dashboard />
